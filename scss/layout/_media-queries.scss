@@ -1,0 +1,199 @@
+@media (max-width: 1024px) {
+    body {
+      width: 100%;
+      height: 100%;
+    p {
+      width: 100%;
+      color: goldenrod;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 40px;
+      text-align: center;
+    footer {
+      justify-content: flex-end; 
+    }
+} 
+} 
+}
+
+@media (max-width: 768px) {
+    header {
+      width: 100%;
+      height: 100%;
+      .navbar{
+        display: flex;
+        flex-wrap: nowrap;
+            ul {
+      justify-content: right;
+      padding: 12px;
+    a{
+        margin: 6px;
+        &:hover{
+           padding: 0;
+           height: 100%;
+        }
+    }
+}
+}
+}
+}
+  
+@media (max-width: 425px) {
+    header {
+      width: 145%;
+      height: 100%;
+    }
+    .bg-image{
+        width: 145%;
+    }
+    footer{
+        width: 145%;
+    }
+}
+  
+@media (max-width: 375px) {
+    header {
+      width: 165%;
+      height: 100%;
+    }
+    .bg-image{
+      width: 165%;
+    }
+    footer {
+      width: 165%;
+    }
+}
+
+@media (max-width: 320px) {
+    header{
+      width: 115%;
+    }
+    .bg-image{
+      width: 115%;
+      img{
+        width: 75%;
+        align-self: center;
+      }
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee span {
+      animation: none;
+      text-shadow: none;
+      width: auto;
+      display: block;
+      line-height: 1.5;
+      text-align: center;
+      white-space: normal;
+      display: repeat infinite
+    }
+   }
+
+
+  /*TREE.HTML*/
+
+  @media (max-width: 425px){
+    .body_tree {
+      margin: 0;
+      overflow: hidden;
+      background-image: url("../assets/binah.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 23.5% 70%;
+      height: 100%;
+    #essay-container h1{
+      font-size:smaller;
+}
+    #essay-container .text_tree{
+      color: black;
+      font-size: 10px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+      overflow: auto;
+      text-align: justify;
+    }
+  }
+}
+
+@media (max-width: 320px){
+  .body_tree {
+    margin: 0;
+    overflow: hidden;
+    background-image: url("../assets/binah.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 27.5% 70%;
+    height: 100%;
+#showreel-container #essay-container h1{
+      font-size:smaller;
+}
+#showreel-container  #essay-container .text_tree{
+      color: black;
+      font-size: 20px;
+      text-align: center;
+      padding: 30px;
+      border-radius: 10px;
+      overflow: auto;
+      text-align: justify;
+    }
+  }
+}
+
+/*ENTER.HTML*/
+
+@media (max-width: 1024px){
+  .enter_main{
+    width: 100%;
+    height: 39em;
+  button{
+    margin-left: 45%;
+    margin-top: 32%;
+}
+}
+}
+
+@media (max-width: 768px){
+  .enter_main{
+    width: 100%;
+    height: 39em;
+  button{
+    margin-left: 44%;
+    margin-top: 42%;
+}
+}
+}
+
+@media (max-width: 425px){
+  .enter_main{
+    width: 100%;
+    height: 40em;
+  button{
+    margin-left: 38.5%;
+    margin-top: 78%;
+}
+}
+}
+
+@media (max-width: 375px){
+  .enter_main{
+    width: 100%;
+  button{
+    margin-left: 38%;
+    margin-top: 90%;
+}
+}
+}
+
+@media (max-width: 320px){
+  .enter_main{
+    width: 100%;
+  button{
+    margin-left: 36%;
+    margin-top: 103%;
+}
+}
+}
+
+/*STORE.HTML*/
+

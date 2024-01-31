@@ -1,0 +1,114 @@
+footer{
+    .barraInferior button{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    color: black;
+    font-family: helvetica;
+    a{
+  text-decoration: none;
+  text-align: center;
+  text-transform: bold;
+  font-family: 'Times New Roman', Times, serif;
+    }
+  &:hover{
+    background-color: lightgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+}
+}
+
+/*TAROT.HTML*/
+
+.footer_tarot{
+  height: 120px;
+  padding: 10px 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #333;
+.forward{
+  background-color: #FFD700;
+  color: #333;
+  padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    a{
+      text-decoration: none;
+}
+}
+}
+
+/*PENDULUM.HTML*/
+
+.footer_pendulum {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 20px;
+  .forward{
+    background-color: #c8ff00;
+    padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  a{
+    text-decoration: none;
+  }
+    }
+  }
+
+  /*BIJOUTERIE.HTML*/
+
+  .footer_bijouterie {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    .forward{
+      background-color: #ffbfbf;
+      padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    a{
+      text-decoration: none;
+  }
+}
+}
+
+/*ORACLE.HTML*/
+
+.footer_oracle {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  .forward{
+    background-color: #530d0d;
+    padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  a{
+    text-decoration: none;
+    color: white;
+}
+}
+}

@@ -1,0 +1,419 @@
+main{
+    width: 100%;
+.bg-image{
+    background-image: url('https://i.ibb.co/DVB5tNW/Fondo.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .marquee{
+        font-size: clamp(4ve 4rem 8vw);
+        overflow: hidden;
+        animation: "slideleft 30s non-linear repeat";
+        &{
+            @keyframes marquee {
+                0% {
+                  transform: translateX(0);
+                }
+                100% {
+                  transform: translateX(-100%);
+                }
+            }
+        }
+        .marquee--long{
+            font-size: 1.25rem;
+            span{
+                display: inline-block;
+                width: var(--tw);
+                text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+                will-change: repeat;
+                animation: marquee var(--ad) linear infinite;
+                .reel a{
+                    width: 100%;
+                    img{
+                        width: 90px;
+                        height: 90px;
+                    }
+                }    
+            }
+        }
+    }
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        color: lightgray;
+        font-family:'Times New Roman', Times, serif;
+    }
+    p{
+        color: goldenrod;
+        font-size: 30px;
+        font-family:'Times New Roman', Times, serif;
+        text-align: center;
+    }
+   }
+ }
+}
+
+/*TREE.HTML*/
+
+.body_tree {
+    margin: 0;
+    overflow: hidden;
+    background-image: url("../assets/binah.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+#showreel-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+#essay-container {
+            position: absolute;
+            width: 60%;
+            height: 60%;
+            background: rgba(243, 237, 217, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            overflow: auto;
+            text-align: justify;
+.text_tree{
+                color: black;
+                font-size:larger;
+                text-align: center;
+                padding: 30px;
+                border-radius: 10px;
+                overflow: auto;
+                text-align: justify;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              }
+          }
+       }
+   }
+
+
+/*ENTER.HTML*/
+  
+.enter_main{
+    background-image: url("../assets/orb.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    height: 35em;
+  button{
+    margin-left: 45%;
+    margin-top: 28%;
+    background-color: black;
+    color: black;
+    text-decoration: none;
+  a{
+font-family: 'Times New Roman', Times, serif;
+font-size: 30px;
+color: indigo;
+text-shadow: none;
+text-decoration: none;
+background-color: black;
+}
+}
+}
+
+/*LOG-IN.HTML*/
+
+.login-body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../assets/apollo.gif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+#login-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+.login-button {
+    background-color: #fff34e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+&:hover {
+    background-color: #e2d40c;
+}
+}
+}
+}
+
+/*STORE.HTML*/
+
+.body_store{
+margin: 0;
+background-color: firebrick;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url("../assets/tete.png");
+background-size:cover;
+background-repeat: no-repeat;
+height: 150rem;
+.tree-container {
+position: relative;
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+.circle-link {
+position: absolute;
+background-color: rgba(255, 255, 255, 0.7);
+border-radius: 50%;
+width: 200px;
+height: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-size: 16px;
+color: black;
+text-decoration: none;
+transition: transform 0.3s;
+&:hover {
+transform: scale(1.1);
+background-color: goldenrod;
+}
+}
+}
+}
+/*STANDARD RESOLUTION FOR 1920X1080 SCREENS*/
+.circle-link:nth-child(1) { top: -126.5%; left: 42.5%; }
+.circle-link:nth-child(2) { top: -86%; left: 76%; }
+.circle-link:nth-child(3) { top: -86%; left: 9%; }
+.circle-link:nth-child(4) { top: -5%; left: 9%; }
+.circle-link:nth-child(5) { top: -5%; left: 76%; }
+.circle-link:nth-child(6) { top:36%; left: 42.5%; }
+.circle-link:nth-child(7) { top: 117.5%; left: 42.5%; }
+.circle-link:nth-child(8) { top: 77%; left: 76%; }
+.circle-link:nth-child(9) { top: 77%; left: 9%; }
+.circle-link:nth-child(10) { top: 200%; left: 42.5%; }
+
+
+/*CONTACT.HTML*/
+  
+.body_us {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f0cb1;
+.main_us {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(138, 12, 223, 0.1);
+            border-radius: 5px;
+          }
+        label {
+            display: block;
+            margin-bottom: 8px;
+          }
+          input,
+          textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+          button {
+            background-color: #333333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+          }
+        }
+    }
+
+/*TAROT.HTML*/
+
+.body_tarot {
+    background-size: cover;
+    color: #fff;
+.main_tarot {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Rosy_Cross_color.png/640px-Rosy_Cross_color.png');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    height: 700px;
+.product {
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+.product img {
+    height: 25px;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+.price {
+    color: #fff;
+    font-size: medium;
+}
+&:hover {
+      background-color: #FFC300;
+    }
+}
+}
+}
+}
+
+/*PENDULUM.HTML*/
+  
+.body_pendulum {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    align-items: center;
+  .main_pendulum {
+    background-image: url('https://i.pinimg.com/originals/ab/6b/df/ab6bdff88d4c584422cc8ada133f8fea.gif');
+    background-position: center;
+    padding: 20px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  .product {
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+  .product img {
+    border: 20px solid #ddd;
+    border-radius: 5px;
+  .price {
+    color: #fff;
+  }
+  .add-to-cart {
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+}
+}
+}
+}
+
+
+/*BIJOUTERIE.HTML*/
+
+.body_bijouterie {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  .main_bijouterie {
+    background-image: url(https://i.redd.it/glla87b1nc4a1.gif);
+    padding: 20px;
+    height: 500px;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  .product {
+    text-align: center;
+    margin: 20px;
+    height: 360px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+  img {
+    height: 250px;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .price {
+    color: #fff;
+}
+}
+}
+}
+
+/*ORACLE.HTML*/
+
+.main_oracle {
+    background-image: url("https://www.estambul.net/wp-content/uploads/2015/08/Oraculo-de-Delfos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 27.3rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+.product {
+    text-align: center;
+    margin: 20px;
+    height: 360px;
+    background-color: rgba(253, 253, 253, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+img {
+    height: 200px;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+h2 {
+    font-size: 1.5em;
+}
+.price {
+    color: #000000;
+    font-size: 1.2em;
+.add-to-cart {
+    background-color: #dde027;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+&:hover {
+    background-color: #2980b9;
+}
+}
+}
+}
+}
