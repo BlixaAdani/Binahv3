@@ -46,9 +46,11 @@ main{
     h2{
         color: lightgray;
         font-family:'Times New Roman', Times, serif;
+      text-shadow: 1px 1px black;
     }
     p{
-        color: goldenrod;
+        color: rgb(167, 121, 7);
+        text-shadow: 1px 1px black;
         font-size: 30px;
         font-family:'Times New Roman', Times, serif;
         text-align: center;
@@ -169,8 +171,10 @@ background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://i.postimg.cc/4d79RmdK/kabbala.png");
-  background-size:cover;
+  background-image: url('../assets/kabbala.gif');
+  background-size:120% 100%;
+  background-position-x: center;
+  background-position-y: center;
   background-repeat: no-repeat;
   height: 155rem;
   margin-top: 25px;

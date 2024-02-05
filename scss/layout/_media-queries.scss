@@ -279,9 +279,10 @@
 
 @media (max-width: 1440px){
   .body_store{
-    background-image: url('https://i.postimg.cc/4d79RmdK/kabbala.png');
+    background-image: url('../assets/tete.png');
     background-color: none;
     background-size: cover;
+    margin-top: 290px;
   }
 }
 
@@ -314,15 +315,29 @@
     background-image: url("https://64.media.tumblr.com/6e31a8c6e0ce48eadd0c7bbd1c9382f3/tumblr_nevi801nPb1relaado1_400.gif");
     background-size: 100% 100%;
     background-position: cover;
+    height: -400em;
+    .tree-container{
+    width: 100%;
     .circle-link {
       background-color: rgba(255, 255, 255, 0.7);
+      margin-right: 300px;
       color: black;
-      border-radius: 4%;
-      width: 10px;
-      height: 10px;
-      &:hover{
-        background-color: goldenrod;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
       }
       }
     }
-  }
+
+      .circle-link:nth-child(1) { top: -60.5%; left: 29%; }
+      .circle-link:nth-child(2) { top: -40%; left: 29%; }
+      .circle-link:nth-child(3) { top: -50%; left: 9%; }
+      .circle-link:nth-child(4) { top: -20%; left: 9%; }
+      .circle-link:nth-child(5) { top: -20%; left: 29%; }
+      .circle-link:nth-child(6) { top: 0%; left: 9%; }
+      .circle-link:nth-child(7) { top: 0%; left: 29%; }
+      .circle-link:nth-child(8) { top: 20%; left: 29%; }
+      .circle-link:nth-child(9) { top: 30%; left: 9%; }
+      .circle-link:nth-child(10) { top: 40%; left: 29%; }
+
+    }
