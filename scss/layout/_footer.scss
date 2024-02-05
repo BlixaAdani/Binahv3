@@ -112,3 +112,51 @@ footer{
 }
 }
 }
+
+/*LIBROS.HTML*/
+
+.footer_libros {
+  background-color: rgba(223, 255, 163, 0.8);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  .forward{
+    background-color: #70f7bf;
+    padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  a{
+    text-decoration: none;
+    color: white;
+}
+}
+}
+
+/*GRIMORIOS.HTML*/
+
+.footer_grim {
+  background-color: rgb(71, 2, 2);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  .forward{
+    background-color: #990026;
+    padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  a{
+    text-decoration: none;
+    color: white;
+}
+}
+}

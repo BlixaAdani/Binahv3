@@ -1,6 +1,6 @@
 {
   "name": "proyectofinal",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Proyecto final con páginas terminadas y SASS aplicado",
   "main": "index.js",
   "scripts": {

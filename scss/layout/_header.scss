@@ -1,6 +1,7 @@
 header{
     width: 100%;
     height: 4rem;
+    background-color: linear-gradient($BackgroundMain, $BackgroundMain2);
 .navbar ul{
 display: flex;
 width: 100%;
@@ -34,7 +35,7 @@ a{
 
 .header_tarot {
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     height: 20vh;
 .back{
@@ -56,10 +57,7 @@ a{
 /*PENDULUM.HTML*/
 
 .header_pendulum {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    text-align: center;
-    height: 20vh;
+    @extend .header_tarot;
     button {
         background-color: #2fa1a1;
         text-decoration: none;
@@ -79,10 +77,7 @@ a{
 /*BIJOUTERIE.HTML*/
   
 .header_bijouterie {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    text-align: center;
-    height: 20vh;
+    @extend .header_tarot;
     button {
         background-color: #aea5ff;
         text-decoration: none;
@@ -102,10 +97,7 @@ a{
 /*ORACLE.HTML*/
 
 .header_oracle {
-    background-color: rgb(160, 160, 160);
-    padding: 20px 0;
-    text-align: center;
-    height: 20vh;
+    @extend .header_tarot;
     .brand {
         font-size: 2em;
         margin-bottom: 10px;
@@ -126,3 +118,58 @@ a{
 }
 }
 }
+
+/*LIBROS.HTML*/
+
+.header_libros {
+    background-color:rgb(46, 12, 78);
+    padding: 20px;
+    text-align: center;
+    height: 20vh;
+.back{
+    background-color: #ffd900;
+    text-decoration: none;
+    color: #a71010;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    a{
+        text-decoration: none;
+    }
+}
+}
+
+/*GRIMORIOS.HTML*/
+
+.header_grim {
+    background-color: rgb(0, 0, 0);
+    color: rgb(100, 13, 7);
+    padding: 20px;
+    text-align: center;
+    height: 20vh;
+.back{
+    background-color: #b8b6ad;
+    text-decoration: none;
+    color: #a71010;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    a{
+        text-decoration: none;
+    }
+}
+}
+
+/*ABOUT*/
+
+.about{
+        .navbar{
+            height: 120px;
+        }
+    }

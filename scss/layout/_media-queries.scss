@@ -1,18 +1,23 @@
+/*INDEX.HTML*/
+
 @media (max-width: 1024px) {
     body {
       width: 100%;
       height: 100%;
+      .bg-image{
+        height: 150vh;
     p {
       width: 100%;
       color: goldenrod;
       font-family: 'Times New Roman', Times, serif;
-      font-size: 40px;
+      font-size: 20px;
       text-align: center;
     footer {
       justify-content: flex-end; 
     }
 } 
-} 
+}
+}
 }
 
 @media (max-width: 768px) {
@@ -36,47 +41,87 @@
 }
 }
 }
-  
 @media (max-width: 425px) {
-    header {
-      width: 145%;
-      height: 100%;
-    }
+  body {
+    width: 142.5%;
+    height: 100%;
+  header {
+    width: 100%;
+    height: 100%;
+  }
     .bg-image{
-        width: 145%;
-    }
-    footer{
-        width: 145%;
-    }
+      height: 150vh;
+    .navbar{
+      display: flex;
+      flex-wrap: nowrap;
+          ul {
+    justify-content: right;
+    padding: 12px;
+  a{
+      margin: 6px;
+      &:hover{
+         padding: 0;
+         height: 100%;
+      }
+  }
 }
-  
-@media (max-width: 375px) {
-    header {
-      width: 165%;
-      height: 100%;
-    }
-    .bg-image{
-      width: 165%;
-    }
-    footer {
-      width: 165%;
-    }
+}
+}
+}
 }
 
-@media (max-width: 320px) {
-    header{
-      width: 115%;
-    }
+  
+@media (max-width: 375px) {
+  body {
+    width: 163%;
+    height: 100%;
+  header {
+    width: 100%;
+    height: 100%;
+  }
     .bg-image{
-      width: 115%;
-      img{
-        width: 75%;
-        align-self: center;
+      height: 150vh;
+    .navbar{
+      display: flex;
+      flex-wrap: nowrap;
+          ul {
+    justify-content: right;
+    padding: 12px;
+  a{
+      margin: 6px;
+      &:hover{
+         padding: 0;
+         height: 100%;
       }
     }
   }
+}
+    }
+  }
+}
 
-  @media (prefers-reduced-motion: reduce) {
+@media (max-width: 320px) {
+  body {
+    width: 187%;
+    height: 100%;
+    header {
+      width: 100%;
+      height: 100%;
+    }
+    .bg-image{
+      height: 155vh;
+        .info p {
+          width: 100%;
+          color: goldenrod;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 28px;
+          text-align: center;
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
     .marquee span {
       animation: none;
       text-shadow: none;
@@ -130,10 +175,10 @@
 }
 #showreel-container  #essay-container .text_tree{
       color: black;
-      font-size: 20px;
-      text-align: center;
-      padding: 30px;
-      border-radius: 10px;
+      font-size: 10px;
+      text-align: space-between;
+      padding: 20px;
+      border-radius: 5px;
       overflow: auto;
       text-align: justify;
     }
@@ -142,13 +187,35 @@
 
 /*ENTER.HTML*/
 
-@media (max-width: 1024px){
+@media (max-width: 1440px){
   .enter_main{
     width: 100%;
-    height: 39em;
+    height: 54em;
+    button{
+      margin-left: 46.5%;
+      margin-top: 31%;
+    }
+  }
+}
+
+@media (max-width: 1280px){
+  .enter_main{
+    width: 100%;
+    height: 90em;
+    button{
+      margin-left: 46%;
+      margin-top: 56%
+    }
+  }
+}
+
+@media (max-width: 1024px){
+  .enter_main{
+    width: 150%;
+    height: 54em;
   button{
     margin-left: 45%;
-    margin-top: 32%;
+    margin-top: 45%;
 }
 }
 }
@@ -156,10 +223,10 @@
 @media (max-width: 768px){
   .enter_main{
     width: 100%;
-    height: 39em;
+    height: 54em;
   button{
     margin-left: 44%;
-    margin-top: 42%;
+    margin-top: 59%;
 }
 }
 }
@@ -167,33 +234,95 @@
 @media (max-width: 425px){
   .enter_main{
     width: 100%;
-    height: 40em;
+    height: 84em;
   button{
     margin-left: 38.5%;
-    margin-top: 78%;
+    margin-top: 170%;
 }
 }
 }
 
 @media (max-width: 375px){
   .enter_main{
-    width: 100%;
+    width: 70%;
+    height: 104em;
   button{
-    margin-left: 38%;
-    margin-top: 90%;
+    margin-left: 36%;
+    margin-top: 210%;
+}
+}
+}
+
+@media (max-width: 425px){
+.enter_main{
+  width: 71%;
+  height: 100em;
+  button{
+    margin-left: 39%;
+    margin-top: 195%;
 }
 }
 }
 
 @media (max-width: 320px){
   .enter_main{
-    width: 100%;
+    width: 71%;
+    height: 99em;
   button{
-    margin-left: 36%;
-    margin-top: 103%;
+    margin-left: 39%;
+    margin-top: 189%;
 }
 }
 }
 
 /*STORE.HTML*/
 
+@media (max-width: 1440px){
+  .body_store{
+    background-image: url('https://i.postimg.cc/4d79RmdK/kabbala.png');
+    background-color: none;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1280px){
+  .body_store{
+    background-size: 100%;
+    margin-left: -20px;
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 1024px){
+  .body_store{
+    background-image: url("https://gd-hbimg.huaban.com/9c3775239f339494ec53fab9e4c1b94ff05df25565b89-h6RQ70");
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    height: 155rem;
+}
+}
+
+@media (max-width: 768px){
+  .body_store{
+    background-image: url("https://64.media.tumblr.com/f68a0e2b9db227060bf2c7bb06042e89/5b96a6843bb1cc6b-17/s500x750/25fce184afbaf80355ff5da5688f194b94603260.gif");
+    background-size: 100% 100%;
+  }
+}
+
+@media (max-width: 425px){
+  .body_store{
+    background-image: url("https://64.media.tumblr.com/6e31a8c6e0ce48eadd0c7bbd1c9382f3/tumblr_nevi801nPb1relaado1_400.gif");
+    background-size: 100% 100%;
+    background-position: cover;
+    .circle-link {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: black;
+      border-radius: 4%;
+      width: 10px;
+      height: 10px;
+      &:hover{
+        background-color: goldenrod;
+      }
+      }
+    }
+  }

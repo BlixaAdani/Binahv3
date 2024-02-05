@@ -1,6 +1,7 @@
 header {
   width: 100%;
-  height: 4rem; }
+  height: 4rem;
+  background-color: linear-gradient(rgba(9, 11, 78, 0.5), rgba(62, 31, 112, 0.5)); }
   header .navbar ul {
     display: flex;
     width: 100%;
@@ -26,12 +27,12 @@ header {
   padding: 1em 0; }
 
 /*TAROT.HTML*/
-.header_tarot {
+.header_tarot, .header_pendulum, .header_bijouterie, .header_oracle {
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   height: 20vh; }
-  .header_tarot .back {
+  .header_tarot .back, .header_pendulum .back, .header_bijouterie .back, .header_oracle .back {
     background-color: #FFD700;
     text-decoration: none;
     color: #333;
@@ -41,69 +42,98 @@ header {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s; }
-    .header_tarot .back a {
+    .header_tarot .back a, .header_pendulum .back a, .header_bijouterie .back a, .header_oracle .back a {
       text-decoration: none; }
 
 /*PENDULUM.HTML*/
-.header_pendulum {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  text-align: center;
-  height: 20vh; }
-  .header_pendulum button {
-    background-color: #2fa1a1;
-    text-decoration: none;
-    color: #333;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s; }
-    .header_pendulum button a {
-      text-decoration: none; }
+.header_pendulum button {
+  background-color: #2fa1a1;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; }
+  .header_pendulum button a {
+    text-decoration: none; }
 
 /*BIJOUTERIE.HTML*/
-.header_bijouterie {
-  background-color: rgba(0, 0, 0, 0.8);
+.header_bijouterie button {
+  background-color: #aea5ff;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; }
+  .header_bijouterie button a {
+    text-decoration: none; }
+
+/*ORACLE.HTML*/
+.header_oracle .brand {
+  font-size: 2em;
+  margin-bottom: 10px; }
+
+.header_oracle button {
+  background-color: #940404;
+  text-decoration: none;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; }
+  .header_oracle button a {
+    text-decoration: none;
+    color: white; }
+
+/*LIBROS.HTML*/
+.header_libros {
+  background-color: #2e0c4e;
   padding: 20px;
   text-align: center;
   height: 20vh; }
-  .header_bijouterie button {
-    background-color: #aea5ff;
+  .header_libros .back {
+    background-color: #ffd900;
     text-decoration: none;
-    color: #333;
+    color: #a71010;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s; }
-    .header_bijouterie button a {
+    .header_libros .back a {
       text-decoration: none; }
 
-/*ORACLE.HTML*/
-.header_oracle {
-  background-color: #a0a0a0;
-  padding: 20px 0;
+/*GRIMORIOS.HTML*/
+.header_grim {
+  background-color: black;
+  color: #640d07;
+  padding: 20px;
   text-align: center;
   height: 20vh; }
-  .header_oracle .brand {
-    font-size: 2em;
-    margin-bottom: 10px; }
-  .header_oracle button {
-    background-color: #940404;
+  .header_grim .back {
+    background-color: #b8b6ad;
     text-decoration: none;
-    color: #000000;
+    color: #a71010;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s; }
-    .header_oracle button a {
-      text-decoration: none;
-      color: white; }
+    .header_grim .back a {
+      text-decoration: none; }
+
+/*ABOUT*/
+.about .navbar {
+  height: 120px; }
 
 main {
   width: 100%; }
@@ -245,10 +275,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../assets/tete.png");
+  background-image: url("https://i.postimg.cc/4d79RmdK/kabbala.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 150rem; }
+  height: 155rem;
+  margin-top: 25px; }
   .body_store .tree-container {
     position: relative;
     width: 100%;
@@ -259,6 +290,7 @@ main {
     .body_store .tree-container .circle-link {
       position: absolute;
       background-color: rgba(255, 255, 255, 0.7);
+      color: black;
       border-radius: 50%;
       width: 200px;
       height: 200px;
@@ -267,53 +299,51 @@ main {
       justify-content: center;
       text-align: center;
       font-size: 16px;
-      color: black;
       text-decoration: none;
       transition: transform 0.3s; }
       .body_store .tree-container .circle-link:hover {
-        transform: scale(1.1);
         background-color: goldenrod; }
 
-/*STANDARD RESOLUTION FOR 1920X1080 SCREENS*/
+/*SCREEN-RESOLUTION 1440X720*/
 .circle-link:nth-child(1) {
-  top: -126.5%;
-  left: 42.5%; }
+  top: -80.5%;
+  left: 43.5%; }
 
 .circle-link:nth-child(2) {
-  top: -86%;
-  left: 76%; }
+  top: -53%;
+  left: 78%; }
 
 .circle-link:nth-child(3) {
-  top: -86%;
+  top: -53%;
   left: 9%; }
 
 .circle-link:nth-child(4) {
-  top: -5%;
+  top: 3%;
   left: 9%; }
 
 .circle-link:nth-child(5) {
-  top: -5%;
-  left: 76%; }
+  top: 3%;
+  left: 78%; }
 
 .circle-link:nth-child(6) {
-  top: 36%;
-  left: 42.5%; }
+  top: 27%;
+  left: 43.5%; }
 
 .circle-link:nth-child(7) {
-  top: 117.5%;
-  left: 42.5%; }
+  top: 87%;
+  left: 43.5%; }
 
 .circle-link:nth-child(8) {
-  top: 77%;
-  left: 76%; }
+  top: 55%;
+  left: 78%; }
 
 .circle-link:nth-child(9) {
-  top: 77%;
+  top: 55%;
   left: 9%; }
 
 .circle-link:nth-child(10) {
-  top: 200%;
-  left: 42.5%; }
+  top: 139%;
+  left: 43.5%; }
 
 /*CONTACT.HTML*/
 .body_us {
@@ -358,7 +388,7 @@ main {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    height: 700px; }
+    height: 500px; }
     .body_tarot .main_tarot .product {
       text-align: center;
       margin: 20px;
@@ -485,6 +515,115 @@ main {
         .main_oracle .product .price .add-to-cart:hover {
           background-color: #2980b9; }
 
+/*LIBROS.HTML*/
+.main_libros {
+  background-image: url("https://i.pinimg.com/originals/de/df/2a/dedf2a28629d3b144884a23c07238298.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 27.3rem;
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+  .main_libros .product {
+    text-align: center;
+    margin: 20px;
+    height: 360px;
+    background-color: rgba(253, 253, 253, 0.6);
+    padding: 15px;
+    border-radius: 10px; }
+    .main_libros .product img {
+      height: 200px;
+      max-width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 5px; }
+    .main_libros .product h2 {
+      font-size: 1.5em; }
+    .main_libros .product .price {
+      color: #000000;
+      font-size: 1.2em; }
+      .main_libros .product .price .add-to-cart {
+        background-color: #dde027;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background-color 0.3s ease; }
+        .main_libros .product .price .add-to-cart:hover {
+          background-color: #2980b9; }
+
+/*GRIMORIOS.HTML*/
+.main_grim {
+  background-image: url("https://64.media.tumblr.com/8862be46ba5333876759ee7aecc12829/tumblr_nxexvpMGlV1rmu963o1_500.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  height: 27.3rem;
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+  .main_grim .product {
+    text-align: center;
+    margin: 20px;
+    height: 360px;
+    background-color: rgba(253, 253, 253, 0.6);
+    padding: 15px;
+    border-radius: 10px; }
+    .main_grim .product img {
+      height: 200px;
+      max-width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 5px; }
+    .main_grim .product h2 {
+      font-size: 1.5em; }
+    .main_grim .product .price {
+      color: #000000;
+      font-size: 1.2em; }
+      .main_grim .product .price .add-to-cart {
+        background-color: #dde027;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background-color 0.3s ease; }
+        .main_grim .product .price .add-to-cart:hover {
+          background-color: #2980b9; }
+
+/*AVISO.HTML*/
+.aviso {
+  background-image: url("https://i.pinimg.com/originals/b2/6b/4a/b26b4a2aeb444b4b648564c805392156.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .aviso h1 {
+    color: blanchedalmond;
+    align-items: center;
+    justify-content: center; }
+
+.about {
+  width: 100% 100%; }
+  .about .about_main {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/59243760ff7c509d1fed851d/1500998657877-TCZ5MFTI2W6INKN9CFIW/Jim%20Lee-Way%20up%20in%20the%20middle%20of%20the%20air.jpg");
+    background-size: cover;
+    color: white; }
+    .about .about_main .container {
+      height: 60rem; }
+      .about .about_main .container .col-lg-8 {
+        margin-top: 100px; }
+      .about .about_main .container p {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: oblique;
+        text-shadow: 1px 1px black; }
+  .about .colg-lg-4 {
+    border-radius: 20px;
+    border-color: black; }
+
 footer .barraInferior button {
   width: 100%;
   display: flex;
@@ -579,18 +718,61 @@ footer .barraInferior button {
       text-decoration: none;
       color: white; }
 
+/*LIBROS.HTML*/
+.footer_libros {
+  background-color: rgba(223, 255, 163, 0.8);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  .footer_libros .forward {
+    background-color: #70f7bf;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; }
+    .footer_libros .forward a {
+      text-decoration: none;
+      color: white; }
+
+/*GRIMORIOS.HTML*/
+.footer_grim {
+  background-color: #470202;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  .footer_grim .forward {
+    background-color: #990026;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; }
+    .footer_grim .forward a {
+      text-decoration: none;
+      color: white; }
+
+/*INDEX.HTML*/
 @media (max-width: 1024px) {
   body {
     width: 100%;
     height: 100%; }
-    body p {
-      width: 100%;
-      color: goldenrod;
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 40px;
-      text-align: center; }
-      body p footer {
-        justify-content: flex-end; } }
+    body .bg-image {
+      height: 150vh; }
+      body .bg-image p {
+        width: 100%;
+        color: goldenrod;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        text-align: center; }
+        body .bg-image p footer {
+          justify-content: flex-end; } }
 
 @media (max-width: 768px) {
   header {
@@ -609,31 +791,62 @@ footer .barraInferior button {
             height: 100%; } }
 
 @media (max-width: 425px) {
-  header {
-    width: 145%;
+  body {
+    width: 142.5%;
     height: 100%; }
-  .bg-image {
-    width: 145%; }
-  footer {
-    width: 145%; } }
+    body header {
+      width: 100%;
+      height: 100%; }
+    body .bg-image {
+      height: 150vh; }
+      body .bg-image .navbar {
+        display: flex;
+        flex-wrap: nowrap; }
+        body .bg-image .navbar ul {
+          justify-content: right;
+          padding: 12px; }
+          body .bg-image .navbar ul a {
+            margin: 6px; }
+            body .bg-image .navbar ul a:hover {
+              padding: 0;
+              height: 100%; } }
 
 @media (max-width: 375px) {
-  header {
-    width: 165%;
+  body {
+    width: 163%;
     height: 100%; }
-  .bg-image {
-    width: 165%; }
-  footer {
-    width: 165%; } }
+    body header {
+      width: 100%;
+      height: 100%; }
+    body .bg-image {
+      height: 150vh; }
+      body .bg-image .navbar {
+        display: flex;
+        flex-wrap: nowrap; }
+        body .bg-image .navbar ul {
+          justify-content: right;
+          padding: 12px; }
+          body .bg-image .navbar ul a {
+            margin: 6px; }
+            body .bg-image .navbar ul a:hover {
+              padding: 0;
+              height: 100%; } }
 
 @media (max-width: 320px) {
-  header {
-    width: 115%; }
-  .bg-image {
-    width: 115%; }
-    .bg-image img {
-      width: 75%;
-      align-self: center; } }
+  body {
+    width: 187%;
+    height: 100%; }
+    body header {
+      width: 100%;
+      height: 100%; }
+    body .bg-image {
+      height: 155vh; }
+      body .bg-image .info p {
+        width: 100%;
+        color: goldenrod;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 28px;
+        text-align: center; } }
 
 @media (prefers-reduced-motion: reduce) {
   .marquee span {
@@ -680,53 +893,117 @@ footer .barraInferior button {
       font-size: smaller; }
     .body_tree #showreel-container #essay-container .text_tree {
       color: black;
-      font-size: 20px;
-      text-align: center;
-      padding: 30px;
-      border-radius: 10px;
+      font-size: 10px;
+      text-align: space-between;
+      padding: 20px;
+      border-radius: 5px;
       overflow: auto;
       text-align: justify; } }
 
 /*ENTER.HTML*/
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .enter_main {
     width: 100%;
-    height: 39em; }
+    height: 54em; }
+    .enter_main button {
+      margin-left: 46.5%;
+      margin-top: 31%; } }
+
+@media (max-width: 1280px) {
+  .enter_main {
+    width: 100%;
+    height: 90em; }
+    .enter_main button {
+      margin-left: 46%;
+      margin-top: 56%; } }
+
+@media (max-width: 1024px) {
+  .enter_main {
+    width: 150%;
+    height: 54em; }
     .enter_main button {
       margin-left: 45%;
-      margin-top: 32%; } }
+      margin-top: 45%; } }
 
 @media (max-width: 768px) {
   .enter_main {
     width: 100%;
-    height: 39em; }
+    height: 54em; }
     .enter_main button {
       margin-left: 44%;
-      margin-top: 42%; } }
+      margin-top: 59%; } }
 
 @media (max-width: 425px) {
   .enter_main {
     width: 100%;
-    height: 40em; }
+    height: 84em; }
     .enter_main button {
       margin-left: 38.5%;
-      margin-top: 78%; } }
+      margin-top: 170%; } }
 
 @media (max-width: 375px) {
   .enter_main {
-    width: 100%; }
+    width: 70%;
+    height: 104em; }
     .enter_main button {
-      margin-left: 38%;
-      margin-top: 90%; } }
+      margin-left: 36%;
+      margin-top: 210%; } }
+
+@media (max-width: 425px) {
+  .enter_main {
+    width: 71%;
+    height: 100em; }
+    .enter_main button {
+      margin-left: 39%;
+      margin-top: 195%; } }
 
 @media (max-width: 320px) {
   .enter_main {
-    width: 100%; }
+    width: 71%;
+    height: 99em; }
     .enter_main button {
-      margin-left: 36%;
-      margin-top: 103%; } }
+      margin-left: 39%;
+      margin-top: 189%; } }
 
 /*STORE.HTML*/
+@media (max-width: 1440px) {
+  .body_store {
+    background-image: url("https://i.postimg.cc/4d79RmdK/kabbala.png");
+    background-color: none;
+    background-size: cover; } }
+
+@media (max-width: 1280px) {
+  .body_store {
+    background-size: 100%;
+    margin-left: -20px;
+    margin-top: 200px; } }
+
+@media (max-width: 1024px) {
+  .body_store {
+    background-image: url("https://gd-hbimg.huaban.com/9c3775239f339494ec53fab9e4c1b94ff05df25565b89-h6RQ70");
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    height: 155rem; } }
+
+@media (max-width: 768px) {
+  .body_store {
+    background-image: url("https://64.media.tumblr.com/f68a0e2b9db227060bf2c7bb06042e89/5b96a6843bb1cc6b-17/s500x750/25fce184afbaf80355ff5da5688f194b94603260.gif");
+    background-size: 100% 100%; } }
+
+@media (max-width: 425px) {
+  .body_store {
+    background-image: url("https://64.media.tumblr.com/6e31a8c6e0ce48eadd0c7bbd1c9382f3/tumblr_nevi801nPb1relaado1_400.gif");
+    background-size: 100% 100%;
+    background-position: cover; }
+    .body_store .circle-link {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: black;
+      border-radius: 4%;
+      width: 10px;
+      height: 10px; }
+      .body_store .circle-link:hover {
+        background-color: goldenrod; } }
+
 * {
   margin: 0;
   padding: 0;
