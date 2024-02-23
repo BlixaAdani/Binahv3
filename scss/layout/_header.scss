@@ -1,6 +1,6 @@
 header{
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     background-color: linear-gradient($BackgroundMain, $BackgroundMain2);
     .navbar .items{
         display: flex;
@@ -14,21 +14,49 @@ header{
 .navbar ul{
 display: flex;
 width: 100%;
+height: 5rem;
 flex-direction: row;
 align-items: center;
 justify-content: end;
 a{
-    height: 3,75rem;
     text-decoration: none;
     text-align: center;
-    color: black;
     font-family: 'Times New Roman', Times, serif;
-    &:hover{ background-color: antiquewhite;
-        height: 100%;
-        color: antiquewhite;}
+    position: relative; 
+    display: block;
+    width: 3,5rem;
+    height: 50px;
+    line-height: 60px;
+    font-size: 30px;
+    color: #082449;
+    transition: .5s;
+    &:hover{ 
+        background-color: antiquewhite;
+        height: 80px;
+        color: #ffee10;
+    box-shadow: 0 0 5px #ffee10;
+    text-shadow: 0 0 5px #ffee10;
+    &::before {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #ffee10;
+    transition: .5s;
+    transform: scale(.9);
+    &:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
 }
 }
 }
+}
+}
+}
+
+
+
+
+
 
 /*CONTACT.HTML*/
 
