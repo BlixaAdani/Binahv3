@@ -655,49 +655,6 @@ main {
     border-radius: 20px;
     border-color: black; }
 
-/*LECTURA HTML */
-body {
-  font-family: Arial, sans-serif; }
-
-h1 {
-  text-align: center;
-  margin-top: 20px; }
-
-button {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 16px; }
-
-#cardImage {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  height: auto;
-  transition: opacity 0.5s; }
-  #cardImage.show {
-    opacity: 1; }
-
-.principal {
-  text-align: center; }
-
-.circle-container {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 0 auto; }
-  .circle-container .sign {
-    position: absolute;
-    transition: transform 0.5s; }
-    .circle-container .sign img {
-      width: 50px;
-      height: 50px; }
-    .circle-container .sign p {
-      text-align: center; }
-    .circle-container .sign.center {
-      transform: translate(-50%, -50%) scale(1.5);
-      z-index: 1; }
-
 footer .barraInferior button {
   width: 100%;
   display: flex;
@@ -833,63 +790,69 @@ footer .barraInferior button {
       color: white; }
 
 /*INDEX.HTML*/
-@media (max-width: 320px) {
+@media (max-width: 2560px) {
   body {
-    width: 200%;
-    height: 150%; }
-  header {
     width: 100%;
     height: 100%; }
-  .bg-image {
-    height: 155vh; }
-    .bg-image .info p {
-      width: 100%;
-      color: goldenrod;
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 28px;
-      text-align: center; } }
+    body .bg-image {
+      height: 100vh; }
+      body .bg-image .marquee {
+        height: 120px; }
+        body .bg-image .marquee .reel {
+          height: 200px; }
+        body .bg-image .marquee h2 {
+          font-size: 50px; }
+        body .bg-image .marquee .info {
+          width: 100%;
+          height: 50%; }
+        body .bg-image .marquee p {
+          width: 100%;
+          font-size: 300px;
+          font-size: large;
+          text-align: center; } }
 
-@media (max-width: 375px) {
+@media (max-width: 1440px) {
   body {
-    width: 163%;
-    height: 100%; }
-  header {
     width: 100%;
     height: 100%; }
-  .bg-image {
-    height: 150vh; }
-    .bg-image .navbar {
-      display: flex;
-      flex-wrap: nowrap; }
-      .bg-image .navbar ul {
-        justify-content: right;
-        padding: 12px; }
-        .bg-image .navbar ul a {
-          margin: 6px; }
-          .bg-image .navbar ul a:hover {
-            padding: 0;
-            height: 100%; } }
+    body .bg-image {
+      height: 100vh; }
+      body .bg-image .marquee {
+        height: 120px; }
+        body .bg-image .marquee .reel {
+          height: 200px; }
+        body .bg-image .marquee h2 {
+          font-size: 50px; }
+        body .bg-image .marquee p {
+          width: 100%;
+          font-size: 30px;
+          text-align: center; } }
 
-@media (max-width: 425px) {
+@media (max-width: 1366px) {
+  .bg-image {
+    background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
+    height: 200vh;
+    background-size: contain; }
+    .bg-image main {
+      height: auto; }
+      .bg-image main section.info {
+        font-size: 14px;
+        /* Remove fixed height and position: relative */ } }
+
+@media (max-width: 1024px) {
   body {
-    width: 142.5%;
-    height: 100%; }
-  header {
     width: 100%;
     height: 100%; }
-  .bg-image {
-    height: 150vh; }
-    .bg-image .navbar {
-      display: flex;
-      flex-wrap: nowrap; }
-      .bg-image .navbar ul {
-        justify-content: right;
-        padding: 12px; }
-        .bg-image .navbar ul a {
-          margin: 6px; }
-          .bg-image .navbar ul a:hover {
-            padding: 0;
-            height: 100%; } }
+    body .bg-image {
+      height: 100vh; }
+      body .bg-image p {
+        width: 100%;
+        color: goldenrod;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+        text-align: center; }
+        body .bg-image p footer {
+          justify-content: flex-end; } }
 
 @media (max-width: 768px) {
   header {
@@ -897,91 +860,95 @@ footer .barraInferior button {
     flex-direction: column;
     align-items: center;
     width: 100%; }
-  .bg-image {
-    height: 120vh; }
-  .navbar {
-    display: flex;
-    flex-wrap: nowrap; }
-    .navbar ul {
-      margin-top: 10px;
-      flex-direction: column;
-      align-items: center;
-      justify-content: right;
-      padding: 12px; }
-      .navbar ul li {
-        margin: 10px; }
-  .info {
-    height: 120px; }
-  p {
-    width: 100%;
-    color: goldenrod;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    text-align: center; } }
+    header .bg-image {
+      height: 120vh; }
+    header .navbar {
+      display: flex;
+      flex-wrap: nowrap; }
+      header .navbar .navbar ul {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: right;
+        padding: 12px; }
+        header .navbar .navbar ul .navbar ul li {
+          margin: 10px; } }
 
-@media (max-width: 1024px) {
-  body {
-    width: 100%;
-    height: 100%; }
-  .bg-image {
-    height: 100vh; }
-  p {
-    width: 100%;
+body {
+  width: 100%;
+  height: 100%; }
+  body .info {
+    font-size: 16px;
+    /* Adjust font size for better readability */ }
+  body p {
     color: goldenrod;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 14px;
     text-align: center; }
-  footer {
-    justify-content: flex-end; } }
+    body p footer {
+      justify-content: flex-end; }
 
-@media (max-width: 1366px) {
+@media (max-width: 425px) {
   body {
-    width: 100%;
+    width: 142.5%;
     height: 100%; }
-  .bg-image {
-    height: 60vh; }
-  p {
-    width: 100%;
-    color: goldenrod;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    text-align: center; } }
-
-@media (max-width: 1440px) {
-  body {
-    width: 100%;
-    height: 100%; }
-  .bg-image {
-    height: 100vh; }
-    .bg-image .marquee {
-      height: 120px; }
-      .bg-image .marquee .reel {
-        height: 200px; }
-      .bg-image .marquee h2 {
-        font-size: 50px; }
-      .bg-image .marquee p {
-        width: 100%;
-        font-size: 30px;
+    body header {
+      width: 100%;
+      height: 100%; }
+    body .bg-image {
+      height: 150vh; }
+      body .bg-image .navbar {
+        display: flex;
+        flex-wrap: nowrap; }
+        body .bg-image .navbar ul {
+          justify-content: right;
+          padding: 12px; }
+          body .bg-image .navbar ul a {
+            margin: 6px; }
+            body .bg-image .navbar ul a:hover {
+              padding: 0;
+              height: 100%; }
+      body .bg-image p {
+        color: goldenrod;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 17px;
         text-align: center; } }
 
-@media (max-width: 2560px) {
+@media (max-width: 375px) {
   body {
-    width: 100%;
+    width: 163%;
     height: 100%; }
-  .bg-image {
-    height: 100vh; }
-    .bg-image .marquee {
-      height: 120px; }
-      .bg-image .marquee .reel {
-        height: 200px; }
-      .bg-image .marquee h2 {
-        font-size: 50px; }
-      .bg-image .marquee .info {
+    body header {
+      width: 100%;
+      height: 100%; }
+    body .bg-image {
+      height: 150vh; }
+      body .bg-image .navbar {
+        display: flex;
+        flex-wrap: nowrap; }
+        body .bg-image .navbar ul {
+          justify-content: right;
+          padding: 12px; }
+          body .bg-image .navbar ul a {
+            margin: 6px; }
+            body .bg-image .navbar ul a:hover {
+              padding: 0;
+              height: 100%; } }
+
+@media (max-width: 320px) {
+  body {
+    width: 200%;
+    height: 150%; }
+    body header {
+      width: 100%;
+      height: 100%; }
+    body .bg-image {
+      height: 155vh; }
+      body .bg-image .info p {
         width: 100%;
-        height: 50%; }
-      .bg-image .marquee p {
-        width: 100%;
-        font-size: large;
+        color: goldenrod;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 28px;
         text-align: center; } }
 
 @media (prefers-reduced-motion: reduce) {
@@ -992,7 +959,8 @@ footer .barraInferior button {
     display: block;
     line-height: 1.5;
     text-align: center;
-    white-space: normal; } }
+    white-space: normal;
+    display: repeat infinite; } }
 
 /*TREE.HTML*/
 @media (max-width: 425px) {

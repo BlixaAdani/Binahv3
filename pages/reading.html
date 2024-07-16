@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Card Selector</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<h1>Select a Tarot Card</h1>
+    <button onclick="selectANumber()">get card</button>
+    <img id="cardImage" src="" alt="Tarot Card Image">
+<div class="principal">
+    <h2>Upon the selected card, check if there is <br>a sign compatibility</h2>
+    <div class="circle-container" id="signContainer">
+        <div class="sign" id="signAries" style="left: 65%; top: 5%;"><img src="images/aries.png" alt="Aries"><p>Aries</p></div>
+        <div class="sign" id="signTaurus" style="left: 85%; top: 15%;"><img src="images/taurus.png" alt="Taurus"><p>Taurus</p></div>
+        <div class="sign" id="signGemini" style="left: 95%; top: 35%;"><img src="images/gemini.png" alt="Gemini"><p>Gemini</p></div>
+        <div class="sign" id="signCancer"   style="left: 95%; top: 60%;"><img src="images/cancer.png" alt="Cancer"><p>Cancer</p></div>
+        <div class="sign" id="signLeo" style="left: 85%; top: 80%;"><img src="images/leo.png" alt="Leo"><p>Leo</p></div>
+        <div class="sign" id="signVirgo" style="left: 70%; top: 95%;"><img src="images/virgo.png" alt="Virgo"><p>Virgo</p></div>
+        <div class="sign" id="signLibra" style="left: 35%; top: 95%;"><img src="images/libra.png" alt="Libra"><p>Libra</p></div>
+        <div class="sign" id="signScorpio" style="left: 20%; top: 80%;"><img src="images/scorpio.png" alt="Scorpio"><p>Scorpio</p></div>
+        <div class="sign" id="signSagittarius" style="left: 5%; top: 60%;"><img src="images/sagittarius.png" alt="Sagittarius"><p>Sagittarius</p></div>
+        <div class="sign" id="signCapricorn" style="left: 5%; top: 35%;"><img src="images/capricorn.png" alt="Capricorn"><p>Capricorn</p></div>
+        <div class="sign" id="signAquarius" style="left: 10%; top: 15%;"><img src="images/aquarius.png" alt="Aquarius"><p>Aquarius</p></div>
+        <div class="sign" id="signPisces" style="left: 25%; top: 5%;"><img src="images/pisces.png" alt="Pisces"><p>Pisces</p></div>
+    </div>
+    <button onclick="signEq()">Check Sign Equivalence</button>
+    <img id="cardImage" src="" alt="Selected Tarot Card">
+<body>
+    <script src="./script.js"></script>
+</body>
+
+</html>
